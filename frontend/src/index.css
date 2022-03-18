@@ -1,0 +1,70 @@
+:root {
+  --primary-100: hsl(34, 94%, 10%);
+  --primary-200: hsl(34, 94%, 18%);
+  --primary-300: hsl(34, 94%, 28%);
+  --primary-400: hsl(34, 94%, 38%);
+  --primary-500: hsl(34, 94%, 48%);
+  --primary-600: hsl(34, 94%, 58%);
+  --primary-700: hsl(34, 94%, 68%);
+  --primary-800: hsl(34, 94%, 78%);
+  --primary-900: hsl(34, 94%, 88%);
+  --white: #fff;
+  --neutral-100: hsl(0, 0%, 0%);
+  --neutral-200: hsl(0, 0%, 15%);
+  --neutral-300: hsl(0, 0%, 25%);
+  --neutral-400: hsl(0, 0%, 35%);
+  --neutral-500: hsl(0, 0%, 45%);
+  --neutral-600: hsl(0, 0%, 55%);
+  --neutral-700: hsl(0, 0%, 65%);
+  --neutral-800: hsl(0, 0%, 75%);
+  --neutral-800: hsl(0, 0%, 85%);
+  --neutral-900: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 36rem) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 50rem) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 60rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--neutral-800);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: inherit;
+  font-size: 1.05rem;
+}
