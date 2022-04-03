@@ -37,6 +37,34 @@ const Calculator = () => {
   const handleCalculate = (e) => {
     e.preventDefault();
 
+    if (initState.principal < 1_000 || initState.principal > 1_000_000) {
+      setInitState({
+        ...initState,
+        annuity: 0,
+        calculated: false,
+        error: true,
+      });
+      return;
+    }
+    if (initState.interestRate < 1 || initState.interestRate >= 100) {
+      setInitState({
+        ...initState,
+        annuity: 0,
+        calculated: false,
+        error: true,
+      });
+      return;
+    }
+    if (initState.year < 1 || initState.year > 40) {
+      setInitState({
+        ...initState,
+        annuity: 0,
+        calculated: false,
+        error: true,
+      });
+      return;
+    }
+
     setInitState({
       ...initState,
       annuity: calculatePayment(
